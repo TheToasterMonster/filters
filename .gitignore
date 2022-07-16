@@ -1,0 +1,16 @@
+/.vscode/*
+/.vs/*
+/*.sln
+/*.vcxproj
+/*.user
+
+/main.dSYM/
+.DS_Store
+
+/bin/
+/bin-int/
+main
+main.exe
+
+/images/raw/
+/images/output/
