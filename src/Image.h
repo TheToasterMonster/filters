@@ -11,7 +11,7 @@ class Image
 {
 public:
 	void ApplyOperator(const Operator& matrix);
-	void ApplySobelOperator();
+	void ApplyOperator2D(const Operator& Gx, const Operator& Gy);
 	void ApplyGrayScale();
 	void Save(std::string filePath);
 

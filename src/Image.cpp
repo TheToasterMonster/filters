@@ -32,19 +32,8 @@ void Image::ApplyOperator(const Operator& matrix)
 	m_ImageData = tmp;
 }
 
-void Image::ApplySobelOperator()
+void Image::ApplyOperator2D(const Operator& Gx, const Operator& Gy)
 {
-	static int Gx[3][3] = {
-		{ -1,  0,  1 },
-		{ -2,  0,  2 },
-		{ -1,  0,  1 },
-	};
-	static int Gy[3][3] = {
-		{ -1, -2, -1 },
-		{  0,  0,  0 },
-		{  1,  2,  1 },
-	};
-
 	ImageData tmp(m_ImageData);
 	for (int i = 0; i < m_Height; i++)
 	{
