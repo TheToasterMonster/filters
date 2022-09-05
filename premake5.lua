@@ -7,6 +7,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 project "Filters"
 	kind "ConsoleApp"
 	language "C++"
+    cppdialect "C++17"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
@@ -23,5 +24,4 @@ project "Filters"
         optimize "On"
 
 	filter "system:Windows"
-        cppdialect "C++17"
         defines { "WINDOWS" }
