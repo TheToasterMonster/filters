@@ -2,7 +2,7 @@
 C++ application to apply a matrix operator onto an image file (currently only works with ppm). Images can be converted to ppm file format on the command line using [ImageMagick](https://imagemagick.org/).
 
 ## Requirements
-- Visual Studio 2022
+- Visual Studio 2022 \
 (CLion can also work, though not officially supported)
 
 ## Quick Start
